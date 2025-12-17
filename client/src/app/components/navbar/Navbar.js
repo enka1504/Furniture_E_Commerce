@@ -22,7 +22,7 @@ const links = [
 ]
 
 
-const Header = () => {
+const Navbar = () => {
   return (
     <header className='navbar shadow-sm w-full bg-[#EFF6F3] text-black py-3 px-4 md:px-2 flex justify-evenly items-center'>
       <Logo />
@@ -72,4 +72,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Navbar
