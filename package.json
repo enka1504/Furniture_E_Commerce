@@ -5,6 +5,6 @@
   },
   "scripts": {
     "dev": "concurrently \"npm run server --prefix server\" \"npm run dev --prefix client\"",
-    "vercel-build": "npm run prepare && next build"
+    "vercel-build": "npm install --prefix server && npm install --prefix client && npm run build --prefix client"
   }
 }
