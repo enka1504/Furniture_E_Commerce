@@ -4,6 +4,7 @@
 :root {
   --background: #ffffff;
   --background-secondary: #fcfcfc;
+  --main-color: #376552;
   /* --foreground: #171717; */
 }
 
@@ -24,8 +25,8 @@ p {
 @theme inline {
   --color-background: var(--background);
   /* --color-foreground: var(--foreground); */
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-nunito: var(--font-nunito);
+  /* --font-mono: var(--font-geist-mono); */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,7 +38,9 @@ p {
 body {
   /* background: var(--background); */
   background: var(--background-secondary);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-nunito), sans-serif;
+  color: black;
+  box-sizing: border-box;
 }
 
 .text-header-img {
@@ -107,3 +110,21 @@ body {
     box-shadow: -25px 0 var(--background-secondary);
   }
 }
+/* Home */
+/* Categories Section */
+.card-category {
+  @apply flex justify-between gap-4 p-6 border border-gray-200 rounded-md border-none hover:shadow-lg transition-shadow duration-300;
+}
+.card-category:not(:nth-child(2)) {
+  @apply items-center;
+}
+.card-category h3 {
+  @apply font-semibold text-(--main-color) text-2xl pb-4;
+}
+.card-category ul {
+  @apply flex flex-col gap-3;
+}
+.card-category img {
+  @apply w-1/2 md:w-auto object-contain;
+}
+/* End Categories Section */
