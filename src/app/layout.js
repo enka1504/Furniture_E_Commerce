@@ -6,7 +6,7 @@ export const metadata = {
   description: "E-commerce platform for furniture and home decor",
   icons: {
     icon: '/logo.svg',
-    sizes: ['16x16', '32x32', '48x48'],
+    sizes: ["64x64", "32x32", "24x24", "16x16"],
   },
 };
 
