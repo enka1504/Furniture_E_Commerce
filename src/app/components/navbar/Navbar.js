@@ -2,12 +2,15 @@ import React from 'react'
 import Logo from './components/Logo'
 import SearchBar from './components/SearchBar'
 import ActionIcons from './components/ActionIcons'
-import Image from 'next/image'
-import search_icon from '@/app/components/navbar/assets/icons/search.svg'
-import cart_icon from '@/app/components/navbar/assets/icons/cart.svg'
-import user_icon from '@/app/components/navbar/assets/icons/account.svg'
-import wishlist_icon from '@/app/components/navbar/assets/icons/wishlist.svg'
 import Link from 'next/link'
+import Image from 'next/image'
+
+// icons
+import cart_icon from '@/app/components/assets/icons/cart.svg'
+import user_icon from '@/app/components/navbar/assets/icons/account.svg'
+import search_icon from '@/app/components/navbar/assets/icons/search.svg'
+import wishlist_icon from '@/app/components/assets/icons/wishlist.svg'
+
 const action_list = [
   { name: 'Cart', icon: cart_icon },
   { name: 'Account', icon: user_icon },
@@ -60,10 +63,22 @@ const Navbar = () => {
           </li>
           {action_list.map((action) => (
             <li key={action.name}>
-              <Link href={`/${action.name.toLowerCase()}`} className='flex items-center gap-2 text-[#595959]'>
-                <Image src={action.icon} alt={`${action.name} icon`} width={20} height={20} />
-                {action.name}
-              </Link>
+              {action.name === "Account" ? (
+                <details className="dropdown ">
+                    <summary className="flex flex-column gap-2 cursor-pointer p-2.5">
+                      <Image src={action.icon} alt={`${action.name} icon`} />
+                      {action.name}</summary>
+                    <ul class="menu bg-white">
+                      <li><Link href={'/login'}>Login</Link></li>
+                      <li><Link href={'/signup'}>New Account</Link></li>
+                    </ul>
+                  </details>
+              ) : (
+                <Link href={`/${action.name.toLowerCase()}`} className='flex items-center gap-2 text-[#595959]'>
+                  <Image src={action.icon} alt={`${action.name} icon`} width={20} height={20} />
+                  {action.name}
+                </Link>
+              )}
             </li>
           ))}
         </ul>

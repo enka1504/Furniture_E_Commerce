@@ -8,8 +8,10 @@
   --main-color-normal: #5ba989;
   --main-color-dark: #52987b;
   --main-color-darker: #294c3e;
+  --main-color-yellow: #ecae06;
   --secondary-color: #f6b70c;
   --sub-text-color: #595959;
+  --border-color-gray: #979797;
   --bd-color-gray: #c8c8c8;
   /* --foreground: #171717; */
 }
