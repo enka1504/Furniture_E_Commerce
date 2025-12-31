@@ -64,13 +64,9 @@ const BestModernSec = () => {
             </CardContent>
             <CardFooter className={'p-0'}>
               <p className='bg-(--main-color-normal) text-[white!important] text-sm px-2 py-1 rounded-sm'>In Stock</p>
-<<<<<<< Updated upstream
-              <Button className={'bg-black rounded-[50%] cursor-pointer p-2 hover:bg-(--main-color-dark) ml-auto'}>
-                <Handbag className='text-white'/>
-=======
+
               <Button className={'bg-black rounded-[50%] cursor-pointer py-5 px-2 hover:bg-(--main-color-dark) ml-auto'}>
                 <Image className=' brightness-1400' src={cart_icon} alt='cart'/>
->>>>>>> Stashed changes
               </Button>
             </CardFooter>
           </Card>
@@ -101,13 +97,9 @@ const BestModernSec = () => {
             </CardContent>
             <CardFooter className={'p-0'}>
               <p className='bg-(--main-color-normal) text-[white!important] text-sm px-2 py-1 rounded-sm'>In Stock</p>
-<<<<<<< Updated upstream
-              <Button className={'bg-black rounded-[50%] cursor-pointer p-2 hover:bg-(--main-color-dark) ml-auto'}>
-                <Handbag className='text-white'/>
-=======
+
               <Button className={'bg-black rounded-[50%] cursor-pointer py-5 px-2 hover:bg-(--main-color-dark) ml-auto'}>
                 <Image className=' brightness-1400' src={cart_icon} alt='cart'/>
->>>>>>> Stashed changes
               </Button>
             </CardFooter>
           </Card>
@@ -138,13 +130,9 @@ const BestModernSec = () => {
             </CardContent>
             <CardFooter className={'p-0'}>
               <p className='bg-(--main-color-normal) text-[white!important] text-sm px-2 py-1 rounded-sm'>In Stock</p>
-<<<<<<< Updated upstream
-              <Button className={'bg-black rounded-[50%] cursor-pointer p-2 hover:bg-(--main-color-dark) ml-auto'}>
-                <Handbag className='text-white'/>
-=======
+
               <Button className={'bg-black rounded-[50%] cursor-pointer py-5 px-2 hover:bg-(--main-color-dark) ml-auto'}>
                 <Image className=' brightness-1400' src={cart_icon} alt='cart'/>
->>>>>>> Stashed changes
               </Button>
             </CardFooter>
           </Card>
@@ -178,13 +166,8 @@ const BestModernSec = () => {
             </CardContent>
             <CardFooter className={'p-0'}>
               <p className='bg-(--main-color-normal) text-[white!important] text-sm px-2 py-1 rounded-sm'>In Stock</p>
-<<<<<<< Updated upstream
-              <Button className={'bg-black rounded-[50%] cursor-pointer p-2 hover:bg-(--main-color-dark) ml-auto'}>
-                <Handbag className='text-white'/>
-=======
               <Button className={'bg-black rounded-[50%] cursor-pointer py-5 px-2 hover:bg-(--main-color-dark) ml-auto'}>
                 <Image className=' brightness-1400' src={cart_icon} alt='cart'/>
->>>>>>> Stashed changes
               </Button>
             </CardFooter>
           </Card>

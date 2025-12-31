@@ -1,13 +1,12 @@
 import { Nunito } from "next/font/google";
 import "./globals.css";
-import localFont from 'next/font/local';
-
 
 export const metadata = {
   title: "FurniStyle",
   description: "E-commerce platform for furniture and home decor",
   icons: {
     icon: '/logo.svg',
+    sizes: ["64x64", "32x32", "24x24", "16x16"],
   },
 };
 
