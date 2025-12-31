@@ -21,6 +21,9 @@ import Image from 'next/image'
 
 // import Images
 import fase from '@/app/components/home/assets/imgs/fase_card.png'
+import cart_icon from '@/app/components/assets/icons/cart.svg'
+import heart_icon from '@/app/components/assets/icons/wishlist.svg'
+
 const BestModernSec = () => {
   return (
     <article className='container pb-5'>
@@ -37,7 +40,7 @@ const BestModernSec = () => {
           <Card className={'w-fit bg-white border-(--bd-color-gray) p-4 rounded-sm'}>
             <CardHeader className={'p-0'}>
               <CardTitle className={'place-self-end'}>
-                <Heart className="inline-block mr-2 mb-1" />
+                <Image className="inline-block mr-2 mb-1" src={heart_icon} alt='favourites'/>
               </CardTitle>
               <CardDescription className={'bg-(--secondary-color) w-fit px-2 py-1 rounded-sm text-white font-semibold place-self-start'}>
                 -10%
@@ -61,15 +64,16 @@ const BestModernSec = () => {
             </CardContent>
             <CardFooter className={'p-0'}>
               <p className='bg-(--main-color-normal) text-[white!important] text-sm px-2 py-1 rounded-sm'>In Stock</p>
+
               <Button className={'bg-black rounded-[50%] cursor-pointer py-5 px-2 hover:bg-(--main-color-dark) ml-auto'}>
-                <Handbag className='text-white'/>
+                <Image className=' brightness-1400' src={cart_icon} alt='cart'/>
               </Button>
             </CardFooter>
           </Card>
           <Card className={'w-fit bg-white border-(--bd-color-gray) p-4 rounded-sm'}>
             <CardHeader className={'p-0'}>
               <CardTitle className={'place-self-end'}>
-                <Heart className="inline-block mr-2 mb-1" />
+                <Image className="inline-block mr-2 mb-1" src={heart_icon} alt='favourites'/>
               </CardTitle>
               <CardDescription className={'bg-(--secondary-color) w-fit px-2 py-1 rounded-sm text-white font-semibold place-self-start'}>
                 -10%
@@ -93,15 +97,16 @@ const BestModernSec = () => {
             </CardContent>
             <CardFooter className={'p-0'}>
               <p className='bg-(--main-color-normal) text-[white!important] text-sm px-2 py-1 rounded-sm'>In Stock</p>
+
               <Button className={'bg-black rounded-[50%] cursor-pointer py-5 px-2 hover:bg-(--main-color-dark) ml-auto'}>
-                <Handbag className='text-white'/>
+                <Image className=' brightness-1400' src={cart_icon} alt='cart'/>
               </Button>
             </CardFooter>
           </Card>
           <Card className={'w-fit bg-white border-(--bd-color-gray) p-4 rounded-sm'}>
             <CardHeader className={'p-0'}>
               <CardTitle className={'place-self-end'}>
-                <Heart className="inline-block mr-2 mb-1" />
+                <Image className="inline-block mr-2 mb-1" src={heart_icon} alt='favourites'/>
               </CardTitle>
               <CardDescription className={'bg-(--secondary-color) w-fit px-2 py-1 rounded-sm text-white font-semibold place-self-start'}>
                 -10%
@@ -125,8 +130,9 @@ const BestModernSec = () => {
             </CardContent>
             <CardFooter className={'p-0'}>
               <p className='bg-(--main-color-normal) text-[white!important] text-sm px-2 py-1 rounded-sm'>In Stock</p>
+
               <Button className={'bg-black rounded-[50%] cursor-pointer py-5 px-2 hover:bg-(--main-color-dark) ml-auto'}>
-                <Handbag className='text-white'/>
+                <Image className=' brightness-1400' src={cart_icon} alt='cart'/>
               </Button>
             </CardFooter>
           </Card>
@@ -136,7 +142,7 @@ const BestModernSec = () => {
           <Card className={'w-fit bg-white border-(--bd-color-gray) p-4 rounded-sm'}>
             <CardHeader className={'p-0'}>
               <CardTitle className={'place-self-end'}>
-                <Heart className="inline-block mr-2 mb-1" />
+                <Image className="inline-block mr-2 mb-1" src={heart_icon} alt='favourites'/>
               </CardTitle>
               <CardDescription className={'bg-(--secondary-color) w-fit px-2 py-1 rounded-sm text-white font-semibold place-self-start'}>
                 -10%
@@ -161,7 +167,7 @@ const BestModernSec = () => {
             <CardFooter className={'p-0'}>
               <p className='bg-(--main-color-normal) text-[white!important] text-sm px-2 py-1 rounded-sm'>In Stock</p>
               <Button className={'bg-black rounded-[50%] cursor-pointer py-5 px-2 hover:bg-(--main-color-dark) ml-auto'}>
-                <Handbag className='text-white'/>
+                <Image className=' brightness-1400' src={cart_icon} alt='cart'/>
               </Button>
             </CardFooter>
           </Card>
