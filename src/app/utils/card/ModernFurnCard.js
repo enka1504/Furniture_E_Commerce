@@ -10,7 +10,7 @@ import heartIcon from '@/app/components/assets/icons/wishlist.svg'
 
 const ModernFurnCard = ({ discountPercentage, ImgSrcContent, ImgSrcContentAlt, cardTitle, priceBefore, priceAfter, stockStatus }) => {
   return (
-          <Card className={'w-fit min-w-[379px] bg-white border-(--bd-color-gray) p-4 rounded-sm grid grid-row-3 justify-center items-center'}>
+          <Card className={'w-fit bg-white border-(--bd-color-gray) p-4 rounded-sm grid grid-row-3 justify-center items-center'}>
             <CardHeader className={'p-0'}>
               <CardTitle className={'place-self-end'}>
                 <Image className="inline-block mr-2 mb-1" src={heartIcon} alt='favourites'/>
