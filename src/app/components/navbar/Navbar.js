@@ -68,7 +68,7 @@ const Navbar = () => {
                     <summary className="flex flex-column gap-2 cursor-pointer p-2.5">
                       <Image src={action.icon} alt={`${action.name} icon`} />
                       {action.name}</summary>
-                    <ul class="menu bg-white">
+                    <ul className="menu bg-white">
                       <li><Link href={'/login'}>Login</Link></li>
                       <li><Link href={'/signup'}>New Account</Link></li>
                     </ul>

@@ -10,12 +10,14 @@
 
 @keyframes sofa-move-shrink {
   0% {
-    /* يبدأ من خارج الشاشة تماماً من اليسار */
     transform: translateX(-100vw) rotate(40deg);
-    opacity: 0; /* يفضل يبدأ بـ 0 ويظهر تدريجياً */
+    opacity: 0;
+  }
+  0% {
+    transform: translateX(-100vw) rotate(40deg);
+    opacity: 0;
   }
   20% {
-    /* يقترب من مكانه */
     transform: translateX(-50vw) rotate(35deg);
     opacity: 1;
   }
@@ -23,17 +25,14 @@
     transform: translateX(-15vw) rotate(20deg);
   }
   80% {
-    /* يبدأ في الاستقرار */
     transform: translateX(-5vw) rotate(10deg);
   }
   100% {
-    /* المكان النهائي المستقر */
     transform: translateX(0) rotate(0);
     opacity: 1;
   }
 }
 
-/* تطبيق الأنميشن */
 .sofa-loader {
   animation: sofa-move-shrink 2s ease-out forwards;
 } /* Parent Sofa */

@@ -20,11 +20,11 @@ const ActionIcons = () => {
         {action_list.map((action) => (
             <li className={`flex justify-content-between items-center gap-2 text-[#595959] `} key={action.name}>
               {action.name === "Account" ? (
-                <details class="dropdown ">
-                    <summary class="flex flex-column gap-2 cursor-pointer m-1">
+                <details className="dropdown ">
+                    <summary className="flex flex-column gap-2 cursor-pointer m-1">
                       <Image src={action.icon} alt={`${action.name} icon`} />
                       {action.name}</summary>
-                    <ul class="menu dropdown-content bg-white rounded-box z-1 w-52 p-2 shadow-sm">
+                    <ul className="menu dropdown-content bg-white rounded-box z-1 w-52 p-2 shadow-sm">
                       <li><Link href={'/login'}>Login</Link></li>
                       <li><Link href={'/signup'}>New Account</Link></li>
                     </ul>
