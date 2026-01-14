@@ -7,6 +7,8 @@ import BestModernSec from "./components/home/components/BestModernSec";
 import { Suspense } from "react";
 import PageLoader from "./utils/loaders/loading.js";
 import Blogs from "./components/home/components/Blogs";
+import DealsSec from "./components/home/components/DealsSec";
+import FollowUsSec from "./components/home/components/FollowUsSec";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
       <Categories />
       <BestModernSec />
       <Blogs />
+      <DealsSec />
+      <FollowUsSec />
       </Suspense>
     </div>
   );
