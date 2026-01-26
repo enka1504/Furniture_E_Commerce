@@ -9,6 +9,7 @@ import PageLoader from "./utils/loaders/loading.js";
 import Blogs from "./components/home/components/Blogs";
 import DealsSec from "./components/home/components/DealsSec";
 import FollowUsSec from "./components/home/components/FollowUsSec";
+import Footer from "./components/home/components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Blogs />
       <DealsSec />
       <FollowUsSec />
+      <Footer/>
       </Suspense>
     </div>
   );
